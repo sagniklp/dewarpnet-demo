@@ -116,7 +116,7 @@ img {
   background-color: black;
 }
 
-#result{
+#result,#uwdiv,#wcdiv{
   height:inherit;
   width:inherit;
 }
