@@ -103,13 +103,13 @@ function showUnwarped(){
   $uw.empty()
   $uw.append( $('<img>').attr({'src': 'https://ad275ac8.ngrok.io/curr_uw.png?dummy='.concat(r.toString()),
                                    'id': "uwimg",
-                                   'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin:auto; display: inline-block;max-width: 90%;"
+                                   'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin:auto; display: inline-block;max-width: 90%;  height:inherit; width: inherit; "
                                    // 'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin-top:50px; margin-bottom:50px; margin-left:auto; margin-right:auto; display: inline-block;max-width: 90%;"
                                   }) );
   $wc.empty()
   $wc.append( $('<img>').attr({'src': 'https://ad275ac8.ngrok.io/curr_wc.png?dummy='.concat(r.toString()),
                                'id': "wcimg",
-                               'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin:auto; display: inline-block;max-width: 90%;"
+                               'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin:auto; display: inline-block;max-width: 90%;  height:inherit; width: inherit; "
                                // 'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin-top:50px; margin-bottom:50px; margin-left:auto; margin-right:auto;  display: inline-block;max-width: 90%;"
                                 }) );
 }
