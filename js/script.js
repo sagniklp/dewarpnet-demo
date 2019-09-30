@@ -38,7 +38,7 @@ $('body').on( 'change', '#fileInput',function(){
                 $result.empty()
                 $result.append( $('<img>').attr({'src': croppedImageDataURL,
                                                  'id': "cropped_img",
-                                                 'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin:auto; display: inline-block;max-width: 90%;"
+                                                 'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin:auto; height:inherit; width: inherit; display: inline-block;max-width: 90%;"
                                                }) );
              });
              $('#btnRestore').click(function() {
