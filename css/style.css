@@ -116,9 +116,10 @@ img {
   background-color: black;
 }
 
-/*.uw{
-
-}*/
+#result{
+  height:inherit;
+  width:inherit;
+}
 
 .canv{
   width: 45vw;
