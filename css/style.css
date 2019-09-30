@@ -1,0 +1,108 @@
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+/* Limit image width to avoid overflow the container */
+img {
+  max-width: 100%;
+   /*This rule is very important, please do not ignore this! */
+}
+
+.btn{
+  width: 100vw;
+}
+
+/*.uw{
+
+}*/
+
+.canv{
+  width: 45vw;
+}
+
+.res{
+  width: 45vw;
+}
+
+.cropper-modal {
+  background-color: white;
+}
+
+
+.top {
+  background-color: black;
+  height: 50vh;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.bot {
+  background-color: black;
+  height: 50vh;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+/*#uwdiv {
+    position: relative;
+    top:auto;
+    left: auto;
+    float: right;
+}
+
+#wcdiv {
+    position: relative;
+    top:auto;
+    left: auto;
+    float: right;
+}
+*/
+
+#canvas {
+  /*height: 600px;*/
+  /*width: 600px;*/
+  max-width: 100%;
+  background-color: #000000;
+  cursor: default;
+  /*border: 1px solid black;*/
+}
+
+.image-gallery {
+  margin: 0 auto;
+  display: table;
+}
+
+.image,
+.thumbnails {
+  display: table-cell;
+}
+
+.thumbnails {
+  width: 300px;
+}
+
+.image {
+  width: 600px;
+  height: 900px;
+  background-color: #cccccc;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.thumbnail:hover .thumbnail-image, .selected .thumbnail-image {
+  border: 4px solid red;
+}
+
+.thumbnail-image {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 4px solid transparent;
+}

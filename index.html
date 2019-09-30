@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>DewarpNet Demo!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.5/cropper.css'>
+  <link  href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link  href="dist/cropper.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 btn">
+            <p>
+              <input type="file" id="fileInput" accept="image/*" />
+              <input type="button" id="btnCrop" value="Crop" />
+              <input type="button" id="btnRestore" value="Restore" />
+              <input type="button" id="btnUnwarp" value="Unwarp!" onclick="unwarp_file()" />
+            </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="top col-sm-6 ">
+          <canvas id="canvas">
+            Your browser does not support the HTML5 canvas element.
+          </canvas>
+      </div>
+      <div class="col-sm-6 top">
+          <div id="result"></div> 
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 bot">
+            <div id="wcdiv"></div> 
+        </div>
+        <div class="col-sm-6 bot">
+          <div id="uwdiv"></div> 
+        </div>
+    </div>
+  </div>
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.5/cropper.js'></script>
+  <script src="dist/jquery.js"></script><!-- jQuery is required -->
+  <script src="dist/cropper.js"></script><!-- Cropper.js is required -->
+  <script src="dist/jquery-cropper.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
