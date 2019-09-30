@@ -1,8 +1,108 @@
-.wrapper {
-  margin: 0 auto;
-  width: 80%;
-  text-align: center;
+/*
+ * Start Bootstrap - Scrolling Nav HTML Template (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+@import url("https://fonts.googleapis.com/css?family=Teko");
+body {
+  width: 100%;
+  height: 100%;
 }
+html {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (min-width: 900px) {
+  .navbar {
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+
+.navbar-default {
+    background-color: #333 !important;
+    border-color: #555 !important;
+}
+
+.navbar-nav>li>a{
+  color: white !important; 
+}
+
+.navbar-brand{
+  color: white !important;
+}
+
+.to-center { margin: auto; max-width: 320px;}
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+.outer-f{
+  height: 150%;
+  position:relative;
+  background: black;
+}
+.outer-e{
+  height: 80%;
+  position:relative;
+  background: #fff;
+}
+.intro-section {
+  /*position: absolute;*/
+  /*top: 30%;*/
+  width:  100%;
+  padding-top: 50px;
+  /*top: 50%;*/
+/*  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: #fff;*/
+}
+.contact-section {
+  position: absolute;
+  /*width: 100%;*/
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*padding-top: 150px;*/
+  text-align: center;
+  background: #fff;
+}
+.file-input{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-default{
+  padding: 2px 12px;
+}
+
+.btnfile{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 14px sans-serif !important;
+  color: white;
+  padding: 6px 12px;
+  /*border: 1px solid black;*/
+}
+
+:root {
+  --color_1: #FAFAFA;
+}
+
+.panels {
+  overflow: hidden;
+  height: 200px;
+  background: var(--color_1);
+}
+
 
 /* Limit image width to avoid overflow the container */
 img {
@@ -10,8 +110,10 @@ img {
    /*This rule is very important, please do not ignore this! */
 }
 
-.btn{
+.funcs{
   width: 100vw;
+  padding-top: 20px;
+  background-color: black;
 }
 
 /*.uw{
@@ -30,7 +132,6 @@ img {
   background-color: white;
 }
 
-
 .top {
   background-color: black;
   height: 50vh;
@@ -46,21 +147,6 @@ img {
 }
 
 
-/*#uwdiv {
-    position: relative;
-    top:auto;
-    left: auto;
-    float: right;
-}
-
-#wcdiv {
-    position: relative;
-    top:auto;
-    left: auto;
-    float: right;
-}
-*/
-
 #canvas {
   /*height: 600px;*/
   /*width: 600px;*/
@@ -70,39 +156,4 @@ img {
   /*border: 1px solid black;*/
 }
 
-.image-gallery {
-  margin: 0 auto;
-  display: table;
-}
 
-.image,
-.thumbnails {
-  display: table-cell;
-}
-
-.thumbnails {
-  width: 300px;
-}
-
-.image {
-  width: 600px;
-  height: 900px;
-  background-color: #cccccc;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.thumbnail:hover .thumbnail-image, .selected .thumbnail-image {
-  border: 4px solid red;
-}
-
-.thumbnail-image {
-  width: 100px;
-  height: 100px;
-  margin: 20px auto;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  border: 4px solid transparent;
-}
