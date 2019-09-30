@@ -4,7 +4,7 @@
 - [Demo Page](https://sagniklp.github.io/dewarpnet-demo/)
 
 
-#### BibTex
+#### BibTex:
 ```
 @inproceedings{SagnikKeICCV2019, 
 Author = {Sagnik Das, Ke Ma, Zhixin Shu, Dimitris Samaras, Roy Shilkrot}, 
