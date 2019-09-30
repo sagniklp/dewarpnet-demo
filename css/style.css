@@ -111,8 +111,9 @@ img {
 }
 
 .funcs{
-  width: 100vw;
+  width: 90vw;
   padding-top: 20px;
+  padding-bottom: 10px;
   background-color: black;
 }
 
