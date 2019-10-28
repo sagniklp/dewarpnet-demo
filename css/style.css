@@ -107,7 +107,18 @@ of those sections to manage the look and feel of the site. */
 /* Limit image width to avoid overflow the container */
 img {
   max-width: 100%;
+  max-height: 100%;
    /*This rule is very important, please do not ignore this! */
+}
+
+.thumbs{
+  padding-top: 15px;
+  width: 95vw;
+}
+
+.img-thumbnail{
+  max-height: 100px !important;
+  padding: 0px !important;
 }
 
 .funcs{
