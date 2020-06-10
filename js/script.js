@@ -101,13 +101,13 @@ function showUnwarped(){
   r=Math.random()*99999
 
   $uw.empty()
-  $uw.append( $('<img>').attr({'src': 'https://19fcec06.ngrok.io/curr_uw.png?dummy='.concat(r.toString()),
+  $uw.append( $('<img>').attr({'src': 'https://da0682909370.ngrok.io/curr_uw.png?dummy='.concat(r.toString()),
                                    'id': "uwimg",
                                    'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin:auto; display: inline-block;max-width: 90%;  height:inherit; "
                                    // 'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin-top:50px; margin-bottom:50px; margin-left:auto; margin-right:auto; display: inline-block;max-width: 90%;"
                                   }) );
   $wc.empty()
-  $wc.append( $('<img>').attr({'src': 'https://19fcec06.ngrok.io/curr_wc.png?dummy='.concat(r.toString()),
+  $wc.append( $('<img>').attr({'src': 'https://da0682909370.ngrok.io/curr_wc.png?dummy='.concat(r.toString()),
                                'id': "wcimg",
                                'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin:auto; display: inline-block;max-width: 90%;  height:inherit; "
                                // 'style': "position: absolute; top:0; left: 0; right: 0; bottom: 0; margin-top:50px; margin-bottom:50px; margin-left:auto; margin-right:auto;  display: inline-block;max-width: 90%;"
@@ -121,7 +121,7 @@ function unwarp_file(){
     }
     else{
         // url='http://localhost:7777/getaudio'
-        url='https://19fcec06.ngrok.io/getimg'
+        url='https://da0682909370.ngrok.io/getimg'
         var formData = new FormData();
         var request = createCORSRequest('post',url);
         var content = dataURItoBlob(input.src);
